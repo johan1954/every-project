@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <include
+        android:id="@+id/profiletoolbar"
+        layout="@layout/settings_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/settings_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/settings_loggedinas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profiletoolbar" />
+
+    <TextView
+        android:id="@+id/fieldUsernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/login_username"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_text1" />
+
+    <View
+        android:id="@+id/settings_divider1"
+        style="@style/Divider"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldUsernameText" />
+
+    <TextView
+        android:id="@+id/settings_changeusernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/settings_changenickname"
+        app:layout_constraintStart_toStartOf="@+id/fieldUsernameText"
+        app:layout_constraintTop_toBottomOf="@+id/settings_divider1" />
+
+    <EditText
+        android:id="@+id/fieldUsername"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_person"
+        android:ems="10"
+        android:hint="@string/settings_hintnickname"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="@+id/settings_changeusernameText"
+        app:layout_constraintTop_toBottomOf="@+id/settings_changeusernameText" />
+
+    <Button
+        android:id="@+id/changeNickname"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/settings_changenickname"
+        app:layout_constraintStart_toStartOf="@+id/fieldUsername"
+        app:layout_constraintTop_toBottomOf="@+id/fieldUsername" />
+
+    <Button
+        android:id="@+id/changeUni"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Change uni"
+        app:layout_constraintBottom_toBottomOf="@+id/changeNickname"
+        app:layout_constraintStart_toStartOf="@+id/settingsUniSpinner"
+        app:layout_constraintTop_toTopOf="@+id/changeNickname" />
+
+    <View
+        android:id="@+id/settings_divider2"
+        style="@style/Divider"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeNickname" />
+
+    <TextView
+        android:id="@+id/settings_changepasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/settings_changepassword"
+        app:layout_constraintStart_toStartOf="@+id/fieldUsername"
+        app:layout_constraintTop_toBottomOf="@+id/settings_divider2" />
+
+    <EditText
+        android:id="@+id/oldPassword"
+        android:layout_width="245dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:ems="10"
+        android:hint="@string/settings_hint_oldpassword"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="@+id/settings_changepasswordText"
+        app:layout_constraintTop_toBottomOf="@+id/settings_changepasswordText" />
+
+    <EditText
+        android:id="@+id/newPassword"
+        android:layout_width="245dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:ems="10"
+        android:hint="@string/settings_hint_newpassword"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="@+id/oldPassword"
+        app:layout_constraintTop_toBottomOf="@+id/oldPassword" />
+
+    <EditText
+        android:id="@+id/newPasswordAgain"
+        android:layout_width="245dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:ems="10"
+        android:hint="@string/settings_hint_newpasswordagain"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="@+id/newPassword"
+        app:layout_constraintTop_toBottomOf="@+id/newPassword" />
+
+    <Button
+        android:id="@+id/changePassword"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/settings_changepassword"
+        app:layout_constraintStart_toStartOf="@+id/newPasswordAgain"
+        app:layout_constraintTop_toBottomOf="@+id/newPasswordAgain" />
+
+    <Spinner
+        android:id="@+id/settingsUniSpinner"
+        android:layout_width="173dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fieldUsername"
+        app:layout_constraintStart_toEndOf="@+id/fieldUsername"
+        app:layout_constraintTop_toTopOf="@+id/fieldUsername" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Change home uni"
+        app:layout_constraintBottom_toTopOf="@+id/settingsUniSpinner"
+        app:layout_constraintStart_toStartOf="@+id/settingsUniSpinner" />
+
+
+</android.support.constraint.ConstraintLayout>

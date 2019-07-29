@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AdminActivity">
+
+    <item
+        android:id="@+id/admin_action_users"
+        android:orderInCategory="200"
+        android:title="@string/admin_menu_usermanager"
+        android:icon="@drawable/ic_supervisor_account_white"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/admin_action_newrestaurant"
+        android:orderInCategory="1"
+        android:title="@string/admin_menu_newrestaurant"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/admin_action_newfood"
+        android:orderInCategory="2"
+        android:title="@string/admin_menu_newfood"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/admin_action_savecsv"
+        android:orderInCategory="3"
+        android:title="@string/admin_menu_savecsv"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/admin_action_savejson"
+        android:orderInCategory="4"
+        android:title="@string/admin_menu_savejson"
+        app:showAsAction="never" />
+
+</menu>

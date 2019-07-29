@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--AppTheme-->
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryDark">#0D47A1</color>
+    <color name="colorAccent">#7E57C2</color>
+
+    <!--DarkTheme-->
+    <!--<color name="colorPrimary2">#222222</color>-->
+    <!--<color name="colorPrimaryDark2">#191919</color>-->
+    <!--<color name="colorAccent2">#7E57C2</color>-->
+
+    <color name="error">#FF171C</color>
+    <color name="transparent">#00FF0000</color>
+    <color name="colorTextWhite">#FFFFFF</color>
+
+    <color name="cardDisabled">#8F8F8F</color>
+    <color name="cardEnabled">#FFFFFF</color>
+</resources>

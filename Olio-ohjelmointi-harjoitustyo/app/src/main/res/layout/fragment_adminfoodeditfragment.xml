@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_adminfragment">
+
+    <Button
+        android:id="@+id/continueBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="saveEditedFood"
+        android:text="@string/review_save"
+        app:layout_constraintStart_toStartOf="@+id/foodEditDate"
+        app:layout_constraintTop_toBottomOf="@+id/foodEditDate" />
+
+    <EditText
+        android:id="@+id/fieldFoodPrice"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="7dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/foodEditPrice"
+        app:layout_constraintTop_toBottomOf="@+id/fieldFoodName" />
+
+    <TextView
+        android:id="@+id/foodEditPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/admin_fragment_price"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/foodEditFragName"
+        app:layout_constraintTop_toBottomOf="@+id/foodEditFragName" />
+
+    <TextView
+        android:id="@+id/foodEditDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/admin_fragment_date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/foodEditPrice"
+        app:layout_constraintTop_toBottomOf="@+id/foodEditPrice" />
+
+    <TextView
+        android:id="@+id/foodEditFragName"
+        android:layout_width="52dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/admin_fragment_restaurantname"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/admin_fragment_title2"
+        app:layout_constraintTop_toBottomOf="@+id/admin_fragment_title2" />
+
+    <EditText
+        android:id="@+id/fieldFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="7dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/foodEditFragName"
+        app:layout_constraintTop_toBottomOf="@+id/admin_fragment_title2" />
+
+    <TextView
+        android:id="@+id/admin_fragment_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/admin_fragment_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fieldFoodDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/foodEditDate"
+        app:layout_constraintTop_toBottomOf="@+id/fieldFoodPrice" />
+
+    <ImageView
+        android:id="@+id/adminfoodedit_fragment_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="continueClick"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:onClick="continueClick"
+        android:text="@string/review_cancel"
+        app:layout_constraintStart_toEndOf="@+id/continueBtn2"
+        app:layout_constraintTop_toTopOf="@+id/continueBtn2" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="dd.mm.yyyy"
+        app:layout_constraintBottom_toBottomOf="@+id/fieldFoodDate"
+        app:layout_constraintStart_toEndOf="@+id/fieldFoodDate"
+        app:layout_constraintTop_toTopOf="@+id/fieldFoodDate" />
+
+</android.support.constraint.ConstraintLayout>
