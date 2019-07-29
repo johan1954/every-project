@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Week 11</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Week 11 NavMenu</string>
+    <string name="nav_header_subtitle">findViewById@androidstudio.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="default50marks">A simple sentence that includes just enough of text, but doesn\'t actually mean anything important. This string just has to exist due to the program requirements.</string>
+    <string name="settings1">Font:</string>
+    <string name="settings2">Bold:</string>
+    <string name="settings3">Italic:</string>
+    <string name="settings4">Width of the TextBox:</string>
+    <string name="settings5">Editing of the other text box allowed?</string>
+    <string name="settings6hint">Username</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string-array name="fonttikoot">
+        <item>8sp</item>
+        <item>9sp</item>
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>14sp</item>
+        <item>16sp</item>
+        <item>18sp</item>
+        <item>20sp</item>
+        <item>24sp</item>
+        <item>28sp</item>
+        <item>32sp</item>
+        <item>36sp</item>
+    </string-array>
+    <string-array name="fonttikootInt">
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>24</item>
+        <item>28</item>
+        <item>32</item>
+        <item>36</item>
+    </string-array>
+    <string-array name="languages">
+        <item>English</item>
+        <item>Finnish</item>
+        <item>Swedish</item>
+    </string-array>
+
+</resources>
